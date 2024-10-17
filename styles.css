@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0;
+    padding:20px;
+}
+
+.container {
+    color: white; /* Text color for the container */
+    font-size: x-large;
+    max-width: 2000px;
+    max-height: fit-content;
+    margin: auto;
+    padding: 20px;
+    background: rgba(3, 3, 3, 0.7); /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Spacing above the buttons */
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0); /* Example color */
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #ffb700; /* Darker shade for hover effect */
+}
+
+.btn-blue:hover {
+    background-color: rgb(50, 50, 235);
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.loadout {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.loadout img {
+    max-height: 100%; /* Ensure images fit within the container */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.loadout-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.loadout-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.loadout-column {
+    flex: 1; /* Equal width for each column */
+    padding: 10px;
+    border: 0px solid #ccc; /* Optional border for columns */
+    margin: 0 5px; /* Spacing between columns */
+}
+
+h2 {
+    margin: 0 0 5px; /* Space below headings */
+}
