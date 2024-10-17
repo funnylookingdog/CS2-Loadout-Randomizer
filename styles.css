@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-attachment: fixed;
     margin: 0;
     padding:20px;
 }
@@ -27,6 +28,7 @@ body {
 }
 
 button {
+    min-width: 150px;
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 16px;
@@ -82,4 +84,47 @@ h1 {
 
 h2 {
     margin: 0 0 5px; /* Space below headings */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on mobile */
+        margin-bottom: 10px; /* Spacing between buttons */
+    }
+
+    .loadout-row {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .loadout-column {
+        margin: 0; /* Reset margin for stacked columns */
+        width: 100%; /* Full width for each column */
+    }
+
+    .loadout img {
+        width: 80px; /* Adjust image size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size for mobile */
+    }
+    @media (max-width: 768px) {
+        body {
+            font-size: large; /* Slightly smaller font for smaller screens */
+        }
+
+        .loadout {
+            font-size: 16px; /* Adjust loadout font size */
+        }
+    }
 }
